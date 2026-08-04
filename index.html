@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO TITLE -->
+    <title>BuildMyWeb | Website Development & Digital Tech Tutor in India</title>
+
+    <!-- PRIMARY SEO -->
+    <meta name="description" content="BuildMyWeb is a Digital Tech Tutor and Website Development company in India. We build professional websites and provide hands-on tech training across India.">
+    <meta name="keywords" content="BuildMyWeb, website development India, digital tech tutor India, learn web development India, website design India">
+    <meta name="author" content="BuildMyWeb">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en-IN">
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- OPEN GRAPH (Facebook / LinkedIn) -->
+    <meta property="og:title" content="BuildMyWeb | Digital Tech Tutor & Website Development India">
+    <meta property="og:description" content="Build modern, SEO-optimized websites and learn web technology with BuildMyWeb – your trusted Digital Tech Tutor in India.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="BuildMyWeb">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BuildMyWeb | Website Development & Digital Tech Tutor India">
+    <meta name="twitter:description" content="Professional website development and digital tech tutoring services across India.">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://www.buildmyweb.in/">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #333;
+        }
+        a { text-decoration: none; }
+
+        header {
+            background: #ffffff;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #0b3c6d;
+        }
+        .logo span { color: #f26b21; }
+
+        .social a {
+            margin-left: 12px;
+            color: #0b3c6d;
+            font-size: 18px;
+        }
+        .whatsapp {
+            background: #25D366;
+            color: #fff !important;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0b3c6d, #145a9e);
+            color: #fff;
+            padding: 60px 20px;
+        }
+        .hero-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+        .hero-text { flex: 1; }
+        .hero-text h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .hero-text a {
+            background: #f26b21;
+            color: #fff;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .hero-img { flex: 1; }
+        .hero-img img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 32px;
+            color: #0b3c6d;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            color: #0b3c6d;
+            margin-bottom: 10px;
+        }
+
+        .cta {
+            background: #f26b21;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        .cta a {
+            background: #fff;
+            color: #f26b21;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #0b3c6d;
+            color: #fff;
+            text-align: center;
+            padding: 25px 15px;
+        }
+        footer p { margin: 5px 0; }
+
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 30px; }
+        }
+		.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    font-weight: 600;
+    color: #0b3c6d;
+    padding: 6px 8px;
+}
+
+.nav a:hover {
+    color: #f26b21;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none; /* clean mobile look */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Build<span>My</span>Web</div>
+
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#whatwedo">What We Do</a>
+        <a href="#expertise">Technical Expertise</a>
+    </nav>
+
+    <div class="social">
+        <a href="#" aria-label="BuildMyWeb Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="BuildMyWeb Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="BuildMyWeb LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/919830015487" class="whatsapp">
+            <i class="fab fa-whatsapp"></i> Chat
+        </a>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Build modern, SEO-optimized websites and learn web technology with BuildMyWeb</h1>
+            <p>Your Digital Tech Tutor for modern, responsive, and professional websites.</p>
+			<a href="https://wa.me/919830015487?text=Hello%20I%20want%20to%20get%20started" target="_blank">
+			Get Started
+			</a>
+          <!--  <a href="#">Get Started</a> -->
+        </div>
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                 alt="Website development and digital tech tutor services in India">
+        </div>
+    </div>
+</section>
+
+<section class="container" id="whatwedo">
+    <div class="section-title">
+        <h2>What We Do</h2>
+    </div>
+
+    <div class="services">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                 alt="Website development services in India">
+            <h3>Website Development</h3>
+            <p>Business websites, portfolios, and WordPress solutions.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+                 alt="Digital tech tutor for learning web development in India">
+            <h3>Digital Tech Tutor</h3>
+            <p>Learn how websites work with hands-on guidance.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+                 alt="Website maintenance and support services in India">
+            <h3>Support & Maintenance</h3>
+            <p>Website updates, fixes, and ongoing support.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container" id="expertise">
+  <div class="section-title">
+    <h2>Technical Expertise & Development Approach</h2>
+  </div>
+
+  <div class="services">
+    <div class="card">
+      <h3>Modern Web Development</h3>
+      <p>
+        We build websites using HTML5, CSS3, and modern JavaScript following
+        clean coding standards, mobile-first design, and SEO best practices.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Performance & SEO Optimized</h3>
+      <p>
+        Our websites are optimized for speed, Google Core Web Vitals, image
+        compression, and structured data to improve search engine ranking.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Secure & Scalable Architecture</h3>
+      <p>
+        We follow secure coding practices, scalable architecture, and hosting-ready
+        setups suitable for shared, VPS, and cloud environments.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+    <h2>Ready to Build Your Web Presence?</h2>
+    <p>Learn. Build. Grow with BuildMyWeb</p>
+    <a href="https://wa.me/919830015487">Contact on WhatsApp</a>
+</section>
+
+<footer>
+    <p>© 2025 BuildMyWeb</p>
+    <p>Digital Tech Tutor & Website Development</p>
+</footer>
+
+<!-- STRUCTURED DATA (SEO TRUST BOOST) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BuildMyWeb",
+  "url": "https://www.buildmyweb.in/",
+  "description": "Website development and digital tech tutor services in India",
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  }
+}
+</script>
+
+</body>
+</html>
