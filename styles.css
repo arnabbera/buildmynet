@@ -3,3 +3,12 @@
 @media(max-width:900px){.nav-links a:not(.nav-cta){display:none}.hero{min-height:700px}.hero-banner{width:1050px;right:-530px;opacity:.2}.split{grid-template-columns:1fr;gap:35px}.proof-grid,.process-grid{grid-template-columns:repeat(2,1fr)}.services-grid{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;gap:30px}.faq-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.container{width:min(100% - 28px,1180px)}.nav{height:67px}.brand img{width:190px}.nav-cta{padding:8px 12px}.hero{min-height:690px}.hero-copy{padding-block:85px}.hero h1{font-size:55px}.hero-copy>p:not(.eyebrow){font-size:16px;margin:28px 0}.hero-actions{flex-direction:column;width:100%}.button{justify-content:space-between}.trust-row{gap:9px;flex-wrap:wrap;margin-top:45px}.hero-banner{right:-560px;bottom:40px}.intro,.services-section,.industries,.process,.why,.faq,.contact{padding:88px 0}.proof-grid,.services-grid,.process-grid{grid-template-columns:1fr}.proof-grid{gap:25px}.services-grid{border-right:1px solid var(--line)}.service-card{min-height:270px}.section-head{display:block}.section-head>p{margin-top:25px}.industry-list{grid-template-columns:1fr}.industry-list div:nth-child(odd){border-right:0}.industry-list div:nth-child(even){padding-left:0}.footer-top{align-items:flex-start;flex-direction:column;gap:30px}.footer-top img{width:240px}.footer-top p{text-align:left}.footer-bottom{gap:20px;flex-direction:column}.footer-bottom div{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.service-card{transition:none}}
+
+/* Full-width brand banner: preserve the complete artwork without cropping. */
+.hero{min-height:0;display:block;background:#020d1d;overflow:hidden}
+.hero:after{display:none}
+.hero-banner{position:relative;inset:auto;width:100%;opacity:1;mix-blend-mode:normal}
+.hero-banner img{display:block;width:100%;height:auto;object-fit:contain}
+.hero-copy{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+@media(max-width:900px){.hero{min-height:0}.hero-banner{position:relative;inset:auto;width:100%;opacity:1}}
+@media(max-width:600px){.hero{min-height:0}.hero-banner{position:relative;inset:auto;width:100%;opacity:1}.hero-banner img{width:100%;height:auto}}
