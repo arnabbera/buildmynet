@@ -12,3 +12,15 @@
 .hero-copy{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 @media(max-width:900px){.hero{min-height:0}.hero-banner{position:relative;inset:auto;width:100%;opacity:1}}
 @media(max-width:600px){.hero{min-height:0}.hero-banner{position:relative;inset:auto;width:100%;opacity:1}.hero-banner img{width:100%;height:auto}}
+
+.split-hero{position:relative;min-height:760px;overflow:hidden;background:radial-gradient(circle at 78% 38%,#064779 0,transparent 36%),linear-gradient(110deg,#020a16 0%,#061930 62%,#032142 100%)}
+.split-hero-inner{min-height:760px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr);align-items:center;gap:25px}
+.split-hero-copy{position:relative;z-index:2;padding:90px 0;display:flex;flex-direction:column;align-items:flex-start}
+.split-hero-copy h1{font-size:clamp(54px,6vw,96px);line-height:.94;letter-spacing:-.055em;max-width:820px;margin:0}
+.split-hero-copy h1 span{display:block;background:linear-gradient(90deg,#24a9ee,#6fd8ff);background-clip:text;color:transparent}
+.split-hero-copy>p:not(.eyebrow){max-width:690px;color:#b7c5d4;font-size:19px;margin:34px 0}
+.split-hero-visual{align-self:stretch;position:relative;overflow:hidden;margin-right:calc((100vw - min(1180px,calc(100vw - 40px)))/-2)}
+.split-hero-visual:before{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(90deg,#041326 0,rgba(4,19,38,.24) 18%,transparent 50%)}
+.split-hero-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% center;display:block}
+@media(max-width:900px){.split-hero{min-height:auto}.split-hero-inner{min-height:auto;grid-template-columns:1fr;padding-top:60px}.split-hero-copy{padding:35px 0 20px}.split-hero-visual{height:430px;margin:0 -20px}.split-hero-visual img{object-position:70% center}.split-hero-copy .trust-row{margin-top:40px}}
+@media(max-width:600px){.split-hero-inner{padding-top:30px}.split-hero-copy{padding:35px 0}.split-hero-copy h1{font-size:54px}.split-hero-copy>p:not(.eyebrow){font-size:16px;margin:26px 0}.split-hero-visual{height:300px;margin:0 -14px}.split-hero-visual img{object-position:73% center}}
